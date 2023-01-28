@@ -12,6 +12,7 @@ import edu.wpi.first.wpilibj.Joystick;
 //import edu.wpi.first.wpilibj.RobotBase;
 //import edu.wpi.first.wpilibj.PS4Controller.Button;
 import edu.wpi.first.wpilibj2.command.Command;
+import edu.wpi.first.wpilibj2.command.button.CommandJoystick;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
@@ -64,18 +65,21 @@ public class RobotContainer {
 
     //leftj8.toggleOnTrue(driveWithJoystickCommand)//shouldnt call function because the execute function should do it
     //when the button is toggled it is should set as true
+
+
+    Joystick leftj = new Joystick(2);
+    JoystickButton jleft8 = new JoystickButton(leftj, 8);
+
+    
   }
 
   //incomplete so ignore
-  public class jbuttons {
+ /*  public class jbuttons {
     public JoystickButton leftj8 = new JoystickButton(leftJoystick, 8);
     public JoystickButton leftj10 = new JoystickButton(leftJoystick, 10);
     public JoystickButton leftj12 = new JoystickButton(leftJoystick, 12);
-  }
+  } */
   //incomplete so ingnore
-  public class buttonstate {
-    public boolean leftj8IsPressed = false;
-  }
 
   /**
    * Use this to pass the autonomous command to the main {@link Robot} class.

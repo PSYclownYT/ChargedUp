@@ -95,11 +95,12 @@ public class Robot extends TimedRobot {
   public void teleopPeriodic() {
     // dont worry about this if its deleted robot doesnt work trust me bro
     if (t == randNum) {
-      SmartDashboard.putString("Thus spoke Kashibe Rohan", messages.getNewMessage());
+      SmartDashboard.putString("Thus spoke Kishibe Rohan", messages.getNewMessage());
       randNum = random.nextInt(1000);
       t = 0;
     }
     t++;
+
   }
 
   @Override
